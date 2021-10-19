@@ -33,7 +33,7 @@ TODO: Add long description of the pod here.
   s.source_files = 'CLDemoTools/Classes/**/*'
   
    s.resource_bundles = {
-     'CLDemoTools' => ['CLDemoTools/Classes/Assets/*.png']
+     'CLDemoTools' => ['CLDemoTools/Classes/Assets/*.jpeg']
    }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
