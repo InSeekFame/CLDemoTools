@@ -38,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		2057DFD3121A9D27DCF331FD /* Pods-CLDemoTools_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CLDemoTools_Tests.release.xcconfig"; path = "Target Support Files/Pods-CLDemoTools_Tests/Pods-CLDemoTools_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		328F7EBECD660456341BABB3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		328F7EBECD660456341BABB3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		45020BF8EEBAB9EA8AFF86C2 /* Pods_CLDemoTools_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CLDemoTools_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		54B64A8762EC0982200CDEB5 /* Pods_CLDemoTools_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CLDemoTools_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* CLDemoTools_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CLDemoTools_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,9 +64,9 @@
 		846E3754AB47FC3ADF78DE43 /* Pods-CLDemoTools_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CLDemoTools_Example.release.xcconfig"; path = "Target Support Files/Pods-CLDemoTools_Example/Pods-CLDemoTools_Example.release.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DAA4F5349DE28F59DF7F55A4 /* Pods-CLDemoTools_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CLDemoTools_Example.debug.xcconfig"; path = "Target Support Files/Pods-CLDemoTools_Example/Pods-CLDemoTools_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		DDE454A15488306CDB91B0D0 /* CLDemoTools.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = CLDemoTools.podspec; path = ../CLDemoTools.podspec; sourceTree = "<group>"; };
+		DDE454A15488306CDB91B0D0 /* CLDemoTools.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CLDemoTools.podspec; path = ../CLDemoTools.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		EAE6EC233CEB493708065151 /* Pods-CLDemoTools_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CLDemoTools_Tests.debug.xcconfig"; path = "Target Support Files/Pods-CLDemoTools_Tests/Pods-CLDemoTools_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		EFC1CD9E3059B92E76CE4E0A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		EFC1CD9E3059B92E76CE4E0A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,7 +193,6 @@
 				EAE6EC233CEB493708065151 /* Pods-CLDemoTools_Tests.debug.xcconfig */,
 				2057DFD3121A9D27DCF331FD /* Pods-CLDemoTools_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -208,7 +207,7 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				EAD46004DB4982347F44884D /* [CP] Embed Pods Frameworks */,
+				0EE4C526544208DA15E0F48A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -295,6 +295,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0EE4C526544208DA15E0F48A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CLDemoTools_Example/Pods-CLDemoTools_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CLDemoTools/CLDemoTools.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CLDemoTools.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CLDemoTools_Example/Pods-CLDemoTools_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		9D9A392046C53874562A537A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -337,24 +355,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EAD46004DB4982347F44884D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CLDemoTools_Example/Pods-CLDemoTools_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/CLDemoTools/CLDemoTools.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CLDemoTools.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CLDemoTools_Example/Pods-CLDemoTools_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

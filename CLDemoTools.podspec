@@ -32,11 +32,30 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'CLDemoTools/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'CLDemoTools' => ['CLDemoTools/Assets/*.png']
-  # }
+   s.resource_bundles = {
+     'CLDemoTools' => ['CLDemoTools/Classes/Assets/*.png']
+   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  
+  #2.6、设置subspec
+#  s.subspec '0_Base' do |sb|
+#      sb.source_files = "CLDemoTools/0_Base/**/*.{h,m}"
+#      sb.resource_bundles = {
+#        'CLDemoTools' => ['CLDemoTools/0_Base/*.xcassets']
+#      }
+#    end
+#    
+#    s.subspec '1_Tools' do |st|
+#      st.source_files = "CLDemoTools/1_Tools/**/*.{h,m}"
+#    end
+#    
+#    s.subspec '2_View' do |sv|
+#      sv.source_files = "CLDemoTools/2_View/**/*.{h,m}"
+#    end
+
+  
+  
 end
