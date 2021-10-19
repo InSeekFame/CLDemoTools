@@ -1,0 +1,6 @@
+framework module CLDemoTools {
+  umbrella header "CLDemoTools-umbrella.h"
+
+  export *
+  module * { export * }
+}

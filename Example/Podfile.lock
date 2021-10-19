@@ -1,0 +1,16 @@
+PODS:
+  - CLDemoTools (0.1.0)
+
+DEPENDENCIES:
+  - CLDemoTools (from `../`)
+
+EXTERNAL SOURCES:
+  CLDemoTools:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CLDemoTools: 307adb08db79957215e583a1c3b48ed3629c3b7e
+
+PODFILE CHECKSUM: 664ce4be97ee0f4bd4ce0449d31e129fa4238d9c
+
+COCOAPODS: 1.11.2
